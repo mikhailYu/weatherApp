@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  background: none;
+  outline: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  font-family: sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 20fr 1fr;
+
+  background-image: url(./images/bgImage.jpeg);
+  background-repeat: no-repeat;
+  background-size: 1900px;
+  background-position: center;
+  background-size: cover;
+}
+.content {
+  grid-row: 1, 2;
+  width: 100%;
+  height: 100%;
+}
+
+.mainCont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.weatherCont {
+  background-color: rgba(111, 188, 233, 0.698);
+  filter: drop-shadow(0px 0px 10px #0b0d1a7c);
+  border-radius: 20px;
+  color: white;
+  width: 40%;
+  height: 40%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.weatherLeftCont {
+  width: 60%;
+  min-width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80%;
+
+  border-right: 2px solid white;
+}
+
+.locationName {
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.weatherImg {
+  width: 80%;
+}
+
+.weatherDesc {
+  font-size: 1.3vw;
+}
+
+.weatherRightCont {
+  width: 40%;
+  min-width: 40%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.weatherTempCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.celUnit,
+.farUnit {
+  color: white;
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+}
+
+.celUnit.inactive,
+.farUnit.inactive {
+  color: rgba(255, 255, 255, 0.493);
+}
+
+.celUnit:hover,
+.farUnit:hover {
+  transform: scale(1.05);
+  color: white;
+}
+
+.slashUnit {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.detailsCont {
+  font-size: 1.3vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  height: 100%;
+  gap: 2vh;
+}
+
+.searchCont {
+  width: 25%;
+  height: 4%;
+  background-color: rgb(30, 40, 54);
+  color: white;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchBar {
+  width: 70%;
+  height: 100%;
+}
+::placeholder {
+  color: rgba(255, 255, 255, 0.815);
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+input {
+  width: 100%;
+  border-bottom: 1px solid white;
+  height: 70%;
+  color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.searchBtnCont {
+  position: relative;
+  left: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchBtn {
+  width: 30px;
+  cursor: pointer;
+  transition: all 100ms ease-out;
+}
+
+.searchBtn:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(5, 3, 12);
+  grid-row: 2, 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gitHub {
+  background-color: white;
+
+  border-radius: 100px;
+  width: 2em;
+  filter: invert();
+
+  transition: all 100ms ease-out;
+}
+
+.gitHub:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="mainCont">
+        <div class="weatherCont">
+          <div class="weatherLeftCont">
+            <div class="locationName"></div>
+            <div class="weatherImgCont">
+              <img class="weatherImg" src="#" alt="" />
+            </div>
+            <div class="weatherDesc"></div>
+          </div>
+          <div class="weatherRightCont">
+            <div class="weatherTempCont">
+              <div class="weatherTempVal"></div>
+
+              <div class="celUnit">°C</div>
+              <div class="slashUnit">/</div>
+              <div class="farUnit">°F</div>
+            </div>
+            <div class="detailsCont">
+              <p class="humidityDesc"></p>
+              <p class="pressureDesc"></p>
+              <p class="windDesc"></p>
+            </div>
+          </div>
+        </div>
+        <div class="searchCont">
+          <div class="searchBar">
+            <form novalidate>
+              <input type="text" placeholder="Search location..." id="search" />
+              <button class="searchBtnCont" type="button">
+                <img class="searchBtn" src="./images/searchIcon.png" alt="" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <a target="_blank" href="https://github.com/mikhailYu"
+        ><img class="gitHub" src="./images/githubLogo.png" alt="github logo"
+      /></a>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
