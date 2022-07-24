@@ -9,7 +9,7 @@ async function getWeather(location) {
 
     return retrievedData;
   } catch (err) {
-    alert(err);
+    console.log(err);
   }
 }
 
