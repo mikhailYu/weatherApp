@@ -1,6 +1,7 @@
-# weatherApp
-Weather app using api functions
+## Weather App
 
-api from openWeather
+A weather app that takes in an input from the user and returns the current weather in the requested area. The graphics also change to match the weather. 
 
-bg image: https://unsplash.com/photos/jqXiBG2VDeA
+The app utilizes an API provided by OpenWeather. 
+
+Background image Source: https://unsplash.com/photos/jqXiBG2VDeA
